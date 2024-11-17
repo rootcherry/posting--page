@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="DEVstart - Projeto de certificação 2 – Postagem de blog">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="/public/img/favicon.png" />
+  <link rel="apple-touch-icon" href="/public/img/apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.webmanifest" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+    rel="stylesheet"
+    />
+  <link rel="stylesheet" href="./public/styles/style.css">
+
+  <title>DEVstart &mdash; Postagem de blog</title>
+</head>
+<body>
+  <header>
+      <h1>My Blog</h1>
+  </header>
+
+  <main>
+      <!-- Form to send a new post -->
+      <section>
+          <h2>Add a New Post</h2>
+          <form id="postForm">
+              <label for="titulo">Title:</label>
+              <input type="text" id="titulo" placeholder="Enter the title" required>
+
+              <label for="conteudo">Content:</label>
+              <textarea id="conteudo" placeholder="Enter post content" required></textarea>
+
+              <button type="submit">Publish Post</button>
+          </form>
+      </section>
+
+      <!-- Rendering posts container -->
+      <section id="posts-container"></section>
+  </main>
+
+  <footer id="footer">
+    <p>&copy; 2024 All rights reserved.</p>
+  </footer>
+
+  <script src="./public/js/script.js"></script>
+</body>
+</html>
